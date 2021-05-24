@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+body{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.loginForma{
+    background-color: white;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 5% 0;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 3%;
+}
+.loginForma h2{
+    font-size: 1.8em;
+}
+
+.loginForma input[type="mail"], .loginForma input[type="password"], .loginForma input[type="text"]{
+    background-color: #dae0dc;
+    border: none;
+    width: 70%;
+    font-size: 1.4em;
+    padding: 2%;
+    transition-duration: 0.1s;
+    margin-bottom: 5%;
+}
+.loginForma input[type="mail"]:focus, .loginForma input[type="password"]:focus, .loginForma input[type="text"]:focus{
+    outline-color: #42d7f5 ;
+    outline-width: medium;
+    outline-style: solid;
+}
+.loginForma input[type="submit"]{
+    background-color: #aeb5b0;
+    border: none;
+    width: 70%;
+    font-size: 1.4em;
+    padding: 2%;
+    transition-duration: 0.1s;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    background-color: #42d7f5;
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid #42d7f5;
+    cursor: pointer;
+}
+.loginForma input[type="submit"]:hover{
+    background-color: transparent;
+    color: #42d7f5;
+}
+.loginForma a{
+    border: none;
+    font-size: 1.4em;
+    padding: 3% 20%;
+    transition-duration: 0.1s;
+    box-sizing: border-box;
+    background-color: #42d7f5;
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid #42d7f5;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.loginForma a:hover{
+    background-color: transparent;
+    color: #42d7f5;
+}
+
+#nazad{
+    padding: 2% 21%;
+}
+.poruka{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #7cde96;
+    padding: 1%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px gray;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    animation: animacijaPoruka 0.5s ease-in-out;
+    position:fixed;
+}
+.poruka button{
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background-color: #9fedb4;
+    font-size: 0.8em;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    padding: auto;
+    transition-duration: 0.2s;
+}
+.poruka button:hover{
+    background-color: #15a13b;
+}
+
+#main-agencije{
+    padding: 5%;
+}
+.kartica-agencije{
+    background-color: #112e99;
+    padding: 5%;
+    box-shadow: 2px 2px 5px gray;
+    font-family: 'Itim', cursive;
+    margin-bottom: 2%;
+}
+.kartica-agencije p{
+    color: white;
+}
+.kartica-agencije h2{
+    color: #ed1909;
+    font-weight: bold;
+}
+.kartica-agencije li{
+    color: #ed1909;
+}
+#opis-agencija{
+    padding: 5% 0;
+}
+.kartica-agencije img{
+    width: 100%;
+}
+#opis-agencija button{
+    color: tomato;
+    background-color: transparent;
+    border: 2px solid tomato;
+    font-size: 1.3em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    padding:1% 3%;
+}
+#opis-agencija button:hover{
+    background-color: tomato;
+    color: white;
+}
+#navigacija{
+	background-color:gold;
+	color:white;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+	background-color:tomato;
+	color:white !important;
+	border-radius:15px;
+}
+.navbar-light .navbar-nav .nav-link{
+	border-radius:15px;
+}
+#popup-forma{
+     background-color: #112e99;
+     width: 60%;
+     margin: auto;
+     text-align: center;
+     z-index: 1;
+     box-shadow: 2px 2px 5px gray;
+     margin-top: 6%;
+     display:none;
+     position: absolute;
+     left: 20%;
+     top:0;
+     position: fixed;
+ }
+#popup-forma h3{
+     color: white;
+     padding: 2%;
+ }
+ .slct-autorizacija{
+    background-color: #dae0dc;
+    border: none;
+    font-size: 1.4em;
+    transition-duration: 0.1s;
+    margin-bottom: 5%;
+ }
+ .slct-autorizacija:focus{
+    outline-color: #42d7f5 ;
+    outline-width: medium;
+    outline-style: solid;
+ }
+ #popup-forma input[type="submit"]{
+    background-color: #aeb5b0;
+    border: none;
+    font-size: 1.4em;
+    padding: 0.5% 2%;
+    transition-duration: 0.1s;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    background-color: #42d7f5;
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid #42d7f5;
+    cursor: pointer;
+}
+#popup-forma input[type="submit"]:hover{
+    background-color: transparent;
+    color: #42d7f5;
+}
+#popup-forma label{
+    color: white;
+}
+#popup-forma form{
+    padding: 3%;
+}
+.x-dugme{
+    border: none;
+    color: silver;
+    background-color: transparent;
+    right: 0;
+    font-weight: bolder;
+    float: right;
+    font-size: 1.5em;
+    transition-duration: 0.2s;
+}
+.x-dugme:hover{
+    color: red;
+}
+.nema-autorizaciju{
+	text-align:center;
+	color: #0a198a;
+}
+@keyframes animacijaPoruka {
+    from{
+        bottom: 50px;
+        opacity: 0;
+    }
+    to{
+        bottom: 15px;
+        opacity: 1;
+    }
+}
+.dugmeDodaj{
+    font-size: 2em;
+    font-weight: bolder;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fc3b3b;
+    -webkit-box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px grey;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 999;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.dugmeDodaj:hover{
+    background-color: gold;
+    color: #112e99;
+}
+#opisTextArea{
+    height: 100px;
+    margin-bottom: 2%;
+}
+#popup-forma-zelena{
+    background-color: green;
+     width: 60%;
+     margin: auto;
+     text-align: center;
+     z-index: 1;
+     box-shadow: 2px 2px 5px gray;
+     top: 1%;
+     position: absolute;
+     left: 20%;
+     color: white;
+     padding: 0 2%;
+     display:none;
+     position: fixed;
+     
+}
+#popup-forma-zelena input[type="submit"]{
+    background-color: #aeb5b0;
+    border: none;
+    font-size: 1.4em;
+    padding: 0.5% 2%;
+    transition-duration: 0.1s;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    background-color: #42d7f5;
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid #42d7f5;
+    cursor: pointer;
+    margin-top:2%;
+}
+#popup-forma-zelena input[type="submit"]:hover{
+    background-color: transparent;
+    color: #42d7f5;
+}
+.podaci{
+	color:gold;
+}
